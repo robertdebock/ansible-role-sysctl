@@ -1,0 +1,41 @@
+---
+# vars file for sysctl
+_sysctl_requirements:
+  default:
+    - sysctl
+  Alpine:
+    - sysctl
+  Archlinux:
+    - sysctl
+  Debian:
+    - sysctl
+  CentOS:
+    - sysctl
+  CentOS-7:
+    - sysctl
+  Fedora:
+    - sysctl
+  openSUSE Leap:
+    - sysctl
+  Ubuntu:
+    - sysctl
+
+sysctl_requirements: "{{ _sysctl_requirements[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_sysctl_requirements[ansible_distribution] | default(_sysctl_requirements['default'])) }}"
+
+_sysctl_packages:
+  default:
+    - sysctl
+
+sysctl_packages: "{{ _sysctl_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_sysctl_packages[ansible_distribution] | default(_sysctl_packages['default'])) }}"
+
+_sysctl_config_directory:
+  default: /etc
+
+sysctl_config_directory: "{{ _sysctl_config_directory[ansible_distribution] | default(_sysctl_config_directory['default']) }}"
+
+sysctl_config_file: sysctl.conf
+
+_sysctl_service:
+  default: sysctl
+
+sysctl_service: "{{ _sysctl_service[ansible_distribution] | default(_sysctl_service['default']) }}"

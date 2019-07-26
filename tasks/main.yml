@@ -1,0 +1,24 @@
+---
+# tasks file for sysctl
+- name: install requirements
+  package:
+    name: procps-ng
+    state: present
+  register: sysctl_install_requirements
+  until: sysctl_install_requirements is succeeded
+  retries: 3
+
+- name: set sysctl setting
+  sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    sysctl_set: "{{ sysctl_set }}"
+    state: present
+    reload: "{{ sysctl_reload }}"
+  with_items:
+    - "{{ sysctl_items }}"
+  when:
+    - sysctl_items is defined
+    - item.name is defined
+    - item.value is defined
+    - ansible_virtualization_type != "docker"
