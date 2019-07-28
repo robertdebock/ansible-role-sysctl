@@ -2,7 +2,7 @@
 # tasks file for sysctl
 - name: install requirements
   package:
-    name: procps-ng
+    name: "{{ sysctl_requirements }}"
     state: present
   register: sysctl_install_requirements
   until: sysctl_install_requirements is succeeded
