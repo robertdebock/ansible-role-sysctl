@@ -22,3 +22,5 @@
     - item.name is defined
     - item.value is defined
     - ansible_virtualization_type != "docker"
+  loop_control:
+    label: "{{ item.name }}"
