@@ -96,7 +96,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |container|allow_failures|
 |---------|--------------|
 |docker-alpine-openrc|yes|
-|docker-alpine-openrc|yes|
 |docker-centos-systemd|no|
 |docker-centos-systemd|no|
 |docker-debian-systemd|yes|
@@ -117,6 +116,14 @@ This role has been tested on these Ansible versions:
 
 The indicator '~=' means [compatible with](https://www.python.org/dev/peps/pep-0440/#compatible-release). For example 'ansible~=2.8' would pick the latest ansible-2.8, for example ansible-2.8.5.
 
+Exceptions
+----------
+
+Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
+
+| variation                 | reason                 |
+|---------------------------|------------------------|
+| Alpine | directory /etc/security is not writable (check presence, access rights, use sudo) |
 
 
 

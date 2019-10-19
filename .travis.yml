@@ -11,7 +11,7 @@ env:
   global:
     - namespace="robertdebock/"
   matrix:
-    - image="docker-alpine-openrc"
+    #- image="docker-alpine-openrc"
     - image="docker-alpine-openrc" tag="edge"
     # - namespace="archlinux/" image="base"
     - image="docker-centos-systemd" tag="7"
