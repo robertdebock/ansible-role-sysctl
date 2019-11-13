@@ -2,7 +2,7 @@ sysctl
 =========
 
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
-<a href="https://travis-ci.org/robertdebock/ansible-role-sysctl"> <img src="https://travis-ci.org/robertdebock/ansible-role-sysctl.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/42309"/> <img src="https://img.shields.io/ansible/quality/42309"/>
+<a href="https://travis-ci.org/robertdebock/ansible-role-sysctl"> <img src="https://travis-ci.org/robertdebock/ansible-role-sysctl.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/"/> <img src="https://img.shields.io/ansible/quality/"/>
 
 Configure sysctl on your system.
 
@@ -95,11 +95,9 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 This role has been tested on these Ansible versions:
 
-- ansible~=2.8
-- ansible~=2.9
+- ansible>=2.8, <2.9
+- ansible>=2.9
 - git+https://github.com/ansible/ansible.git@devel
-
-The indicator '\~=' means [compatible with](https://www.python.org/dev/peps/pep-0440/#compatible-release). For example 'ansible\~=2.8' would pick the latest ansible-2.8, for example ansible-2.8.6.
 
 Exceptions
 ----------
