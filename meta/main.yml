@@ -33,7 +33,6 @@ galaxy_info:
     - sysctl
     - archlinux
     - centos
-    - fedora
     - opensuse
     - rhel
     - ubuntu
