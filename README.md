@@ -110,7 +110,6 @@ Some variarations of the build matrix do not work. These are the variations and 
 | Alpine | directory /etc/security is not writable (check presence, access rights, use sudo) |
 
 
-
 Testing
 -------
 
