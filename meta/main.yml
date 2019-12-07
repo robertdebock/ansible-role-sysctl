@@ -33,6 +33,6 @@ galaxy_info:
     - sysctl
     - archlinux
     - centos
-    - rhel
+    - redhat
 
 dependencies: []
