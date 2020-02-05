@@ -22,8 +22,8 @@ This example is taken from `molecule/resources/playbook.yml` and is tested on ea
   roles:
     - role: robertdebock.sysctl
       sysctl_items:
-        name: net.ipv4.ip_forward
-        value: 1
+        - name: net.ipv4.ip_forward
+          value: 1
 ```
 
 The machine you are running this on, may need to be prepared, I use this playbook to ensure everything is in place to let the role work.
