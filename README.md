@@ -46,9 +46,11 @@ After running this role, this playbook runs to verify that everything works, thi
   become: yes
   gather_facts: yes
 
-  tasks:
-    - name: check if connection still works
-      ping:
+  roles:
+    - role: robertdebock.sysctl
+      sysctl_items:
+        - name: net.ipv4.ip_forward
+          value: 1
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.

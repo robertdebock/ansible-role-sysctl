@@ -4,6 +4,8 @@
   become: yes
   gather_facts: yes
 
-  tasks:
-    - name: check if connection still works
-      ping:
+  roles:
+    - role: ansible-role-sysctl
+      sysctl_items:
+        - name: net.ipv4.ip_forward
+          value: 1
