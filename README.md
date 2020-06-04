@@ -2,9 +2,9 @@
 
 Configure sysctl on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-sysctl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-sysctl)|[![github](https://github.com/robertdebock/ansible-role-sysctl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-sysctl/actions)|[![quality](https://img.shields.io/ansible/quality/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![downloads](https://img.shields.io/ansible/role/d/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-sysctl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-sysctl)|[![github](https://github.com/robertdebock/ansible-role-sysctl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-sysctl/actions)|[![quality](https://img.shields.io/ansible/quality/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![downloads](https://img.shields.io/ansible/role/d/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-sysctl.svg)](https://github.com/robertdebock/ansible-role-sysctl/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
