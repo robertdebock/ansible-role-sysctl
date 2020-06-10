@@ -20,7 +20,6 @@
     - sysctl_items is defined
     - item.name is defined
     - item.value is defined
-    - ansible_virtualization_type != "docker"
-    - ansible_virtualization_type != "container"
+    - ansible_connection != "docker"
   loop_control:
     label: "{{ item.name }}"
