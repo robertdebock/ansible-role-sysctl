@@ -7,9 +7,6 @@
   package:
     name: "{{ sysctl_requirements }}"
     state: present
-  register: sysctl_install_requirements
-  until: sysctl_install_requirements is succeeded
-  retries: 3
 
 - name: set sysctl setting
   sysctl:
