@@ -4,9 +4,11 @@
     that:
       - sysctl_set is defined
       - sysctl_set | type_debug == "bool"
+    quiet: yes
 
 - name: test if sysctl_reload is set correctly
   assert:
     that:
       - sysctl_reload is defined
       - sysctl_reload | type_debug == "bool"
+    quiet: yes
