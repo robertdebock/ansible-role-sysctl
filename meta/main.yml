@@ -34,7 +34,5 @@ galaxy_info:
 
   galaxy_tags:
     - sysctl
-    - centos
-    - redhat
 
 dependencies: []
