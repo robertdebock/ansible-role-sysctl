@@ -15,7 +15,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -28,15 +28,13 @@ jobs:
   test:
     needs:
       - lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
       matrix:
         config:
           - image: "alpine"
             tag: "latest"
-          - image: "alpine"
-            tag: "edge"
           - image: "centos"
             tag: "7"
           - image: "centos"
