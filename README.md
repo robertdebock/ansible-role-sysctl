@@ -2,9 +2,9 @@
 
 Configure sysctl on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-sysctl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-sysctl)|[![github](https://github.com/robertdebock/ansible-role-sysctl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-sysctl/actions)|[![quality](https://img.shields.io/ansible/quality/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![downloads](https://img.shields.io/ansible/role/d/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-sysctl.svg)](https://github.com/robertdebock/ansible-role-sysctl/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-sysctl.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-sysctl)|[![github](https://github.com/robertdebock/ansible-role-sysctl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-sysctl/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-sysctl/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-sysctl)|[![quality](https://img.shields.io/ansible/quality/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![downloads](https://img.shields.io/ansible/role/d/42309)](https://galaxy.ansible.com/robertdebock/sysctl)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-sysctl.svg)](https://github.com/robertdebock/ansible-role-sysctl/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -54,10 +54,11 @@ sysctl_reload: yes
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-sysctl/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
