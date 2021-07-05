@@ -4,8 +4,8 @@
 _sysctl_requirements:
   default:
     - procps
-  RedHat: &RHEL
+  RedHat: &redhat_requirements
     - procps-ng
-  Rocky: *RHEL
+  Rocky: *redhat_requirements
 
 sysctl_requirements: "{{ _sysctl_requirements[ansible_os_family] | default(_sysctl_requirements['default']) }}"
