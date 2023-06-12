@@ -5,4 +5,4 @@
 repository:
   description: Configure sysctl on your system.
   homepage: https://robertdebock.nl/
-  topics: sysctl, ansible, molecule, tox, playbook
+  topics: sysctl, system, ansible, molecule, tox, playbook
