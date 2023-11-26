@@ -1,4 +1,4 @@
-# Ansible role [sysctl](#sysctl)
+# [Ansible role sysctl](#sysctl)
 
 Configure sysctl on your system.
 
