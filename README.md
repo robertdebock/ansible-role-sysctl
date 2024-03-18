@@ -14,8 +14,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: robertdebock.sysctl
@@ -30,8 +30,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: robertdebock.bootstrap
@@ -48,11 +48,11 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for sysctl
 
 # Verify token value with the sysctl command and set with -w if necessary
-sysctl_set: yes
+sysctl_set: true
 
 # if yes, performs a /sbin/sysctl -p if the sysctl_file is updated.
 # If no, does not reload sysctl even if the sysctl_file is updated
-sysctl_reload: yes
+sysctl_reload: true
 ```
 
 ## [Requirements](#requirements)
