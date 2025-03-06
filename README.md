@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: robertdebock.sysctl
+    - role: ansible-role-sysctl
       sysctl_items:
         - name: net.ipv4.ip_forward
           value: 1
