@@ -5,7 +5,7 @@
   gather_facts: true
 
   roles:
-    - role: ansible-role-sysctl
+    - role: robertdebock.sysctl
       sysctl_items:
         - name: net.ipv4.ip_forward
           value: 1
