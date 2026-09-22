@@ -11,6 +11,7 @@
   ansible.builtin.package:
     name: "{{ sysctl_requirements }}"
     state: present
+  when: sysctl_requirements | length > 0
 
 - name: Set sysctl setting
   ansible.posix.sysctl:
